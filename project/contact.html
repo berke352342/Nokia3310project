@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is description for filling the form">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header id="global-header"></header>  <!-- Footer will be injectead here by JavaScript again -->
+    <main>
+        <h1> Contact Us With Us </h1>
+        <p> <strong> If you have any questions about our products or need support, you can feel free to reach to us.</strong> </p>
+
+        <form method="post" action="somefile">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+            <button type="submit">Send</button>
+             <!-- Users have to fill all the informations to contact -->
+
+        </form>
+    </main>
+    <footer id="global-footer"></footer> <!-- Adds the same footer to every page -->
+    <script src="js/script.js"></script> <!-- Loads shared header and footer using JavaScript -->
+</body>
+</html>
